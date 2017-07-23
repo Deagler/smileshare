@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmileShare.UploadPage" 
+             Title="Upload Smile!">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <!-- Header -->
+            <StackLayout VerticalOptions="Start">
+                <Label TextColor="Black" FontSize="Large" HorizontalOptions="Center">Share your smile with the world!</Label>
+                <Entry Placeholder="Caption" x:Name="titleEntry"></Entry>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                    <Button Text="Take Photo" HorizontalOptions="Fill"  Clicked="takePhoto"/>
+                    <Button Text="Select Photo" Clicked="selectPhoto"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!-- Body -->
+            <StackLayout Spacing="12" VerticalOptions="CenterAndExpand">
+                <Image x:Name="selectedImage" HorizontalOptions="Center" Aspect="AspectFit"/>
+            </StackLayout>
+
+            <!-- Footer -->
+            <StackLayout VerticalOptions="End" HorizontalOptions="Fill"  Orientation="Horizontal">
+                <StackLayout HorizontalOptions="Start">
+                    <ActivityIndicator x:Name="statusIndicator"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Label x:Name="currentStatus" FontSize="Large"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="End">
+                    <Button x:Name="postButton" IsVisible="True" Text="Post" HorizontalOptions="End" Clicked="postPhoto"/>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+
+
+
+    </ContentPage.Content>
+</ContentPage>
