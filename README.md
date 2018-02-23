@@ -10,5 +10,5 @@ This was my submission for Microsoft Student Accelerator Phase 2
 - Microsoft Azure (EasyTables and hosting it)
 
 
-![Image](https://i.imgur.com/KthNDoj.png)
+![Image](https://i.imgur.com/KthNDojm.png)
 
