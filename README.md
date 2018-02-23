@@ -1,8 +1,14 @@
 # smileshare
-Submission for Microsoft Student Accelerator Phase 2
 
-[Android APK Download Link](https://www.dropbox.com/s/r7s22hiyu6thdqj/SmileShare.Android-Signed.apk?dl=0)
+A cross-platform mobile app that lets you take a photo and have cognitive services analyse it to ensure it contains a face and that the person is smiling, If it does it uploads it to Imgur(Privately) and stores it in EasyTables so it can be viewed from SmileShare
 
-[Video Demonstration](https://www.dropbox.com/s/fwnh6b0lypsd49i/2017_07_25_18_02_54.mp4?dl=0)
+This was my submission for Microsoft Student Accelerator Phase 2
 
-*For some reason the app doesn't run as smoothly when recording so feel free to download it and check it out for yourself if you can be bothered*
+## Technologies/Libraries Used:
+- Xamarin
+- Emotion API to detect faces and emotions (Through Cognitive Services)
+- Microsoft Azure (EasyTables and hosting it)
+
+
+![Image](https://i.imgur.com/KthNDoj.png)
+
